@@ -1,4 +1,4 @@
-class Dinos:
+class Dinos: #feito
 
     def __init__(self, nome, vida, dano, velocidade, habilidade):
         self.nome = nome
