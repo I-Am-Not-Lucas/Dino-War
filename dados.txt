@@ -1,0 +1,27 @@
+-> Tiranossauro Rex
+
+* Vida: 2000
+* Dano: 300
+* Velocidade: 5
+* Habilidade: Rugido ensurdecedor; consite em uma chance de 50% de "stunar" o oponente, fazendo-o perder seu turno
+
+-> Velociraptor
+
+* Vida: 1500
+* Dano: 200
+* Velocidade: 7
+* Habilidade: Sorrateiro; velocidade aumentada em 2x, ignora 80% do dano
+
+-> Triceratops
+
+* Vida: 3000
+* Dano: 150
+* Velocidade: 5
+* Habilidade: armadura de ferro; devolve ao oponente 20% do dano durante 3 turnos , e ganha um escudo baseado no dano devolvido
+
+
+=> Conceitos:
+
+-> Dado da sorte: Em um dado de 6 lados, se cair 6 seu dano é aumentado em 20%, se cair 1 o dinossauro "erra"; opcional
+
+
