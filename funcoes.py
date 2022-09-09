@@ -1,6 +1,7 @@
-# escolher o dino / filtrar a escolha
+# criar o objeto dino / criar o ponente
+from Dino import *
 
-def bem_vindo(nome="teste"):
+def bem_vindo():
     print('-' * 23)
     print("Bem vindo ao dino war!")
     print('-' * 23)
@@ -20,12 +21,98 @@ def escolha_dino():
         escolha = input("Qual dino vc quer usar?")
 
         resultado = filtro(escolha)
+
+        
     
-        print(resultado)
+    return escolha
+
+
+def cria_seu_dino(jogador):
+
+    if int(jogador) == 1:
+
+        jogador = Dinos('Tiranossauro Rex', 2000, 300, 5, 'Rugido ensurdecedor')
+        
+        return jogador
+
+    if int(jogador) == 2:
+
+        jogador = Dinos('Velociraptor', 1500, 200, 7, 'Sorrateiro')
+        
+        return jogador
+    
+    if int(jogador) == 3:
+
+        jogador = Dinos('Triceratops', 3000, 150, 5, 'armadura de ferro')
+        
+        return jogador
+
+def cria_oponente(random_number):
+
+    #print(random_number)
+
+    if int(random_number) == 1:
+
+        random_number = Dinos('Tiranossauro Rex', 2000, 300, 5, 'Rugido ensurdecedor')
+        
+        return random_number
+
+    if int(random_number) == 2:
+
+        random_number = Dinos('Velociraptor', 1500, 200, 7, 'Sorrateiro')
+        
+        return random_number
+    
+    if int(random_number) == 3:
+
+        random_number = Dinos('Triceratops', 3000, 150, 5, 'armadura de ferro')
+        
+        return random_number
 
 
 
 
+
+    else:
+        return "algo deu errado"
+
+def mostra_caracter(object): # How can i change the objetc here to return another thing
+    
+
+    print(object.nome)
+
+    print(object.vida)
+
+    print(object.velocidade)
+
+    print(object.habilidade)
+
+def duel (escolha, oponente): # 1 = is player / 0 = oponent
+
+    vez = ''
+
+
+    turno_player1 = escolha.velocidade
+    turno_player2 = oponente.velocidade
+
+    if turno_player1 >= 20 and turno_player1 > turno_player2:
+
+        vez = 1 
+
+    if turno_player2 >= 20 and turno_player2 > turno_player1:
+
+        vez = 0 
+
+
+
+
+
+
+    
+
+
+
+    
 
 if __name__ == "__main__":
 
