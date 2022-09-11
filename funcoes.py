@@ -1,5 +1,6 @@
 # criar o objeto dino / criar o ponente
 from Dino import *
+from random import randint
 
 def bem_vindo():
     print('-' * 23)
@@ -87,21 +88,47 @@ def mostra_caracter(object): # How can i change the objetc here to return anothe
 
     print(object.habilidade)
 
-def duel (escolha, oponente): # 1 = is player / 0 = oponent
+def duel (escolha, oponente): # 1 = is player / 2 = oponent
 
-    vez = ''
+    vez = 0
 
 
     turno_player1 = escolha.velocidade
     turno_player2 = oponente.velocidade
 
-    if turno_player1 >= 20 and turno_player1 > turno_player2:
+    while escolha.vida > 0 and oponente.vida > 0:
 
-        vez = 1 
+        
 
-    if turno_player2 >= 20 and turno_player2 > turno_player1:
+        while turno_player1 < 20 and turno_player2 < 20:
 
-        vez = 0 
+            turno_player1 += turno_player1
+            turno_player2 += turno_player2
+
+            print(turno_player1, turno_player2)
+        
+        
+        
+
+    print('Saiu loop')
+
+
+    # if turno_player1 > turno_player2:
+
+    #     vez = 1 
+
+    # if turno_player2 >= 20 and turno_player2 > turno_player1:
+
+    #     vez = 2
+    
+    # else:
+
+    #     vez = randint(1,2)
+
+
+    
+
+    
 
 
 
