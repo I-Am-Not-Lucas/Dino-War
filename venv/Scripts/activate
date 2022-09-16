@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Programacao\Python\Projetos_pessoais\Dino_war\venv"
+VIRTUAL_ENV="C:\Programacao\Python\PROJETOS\Dino_war\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
