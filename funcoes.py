@@ -21,12 +21,9 @@ def escolha_dino():
 
         escolha = input("Qual dino vc quer usar?")
 
-        resultado = filtro(escolha)
-
-        
+        resultado = filtro(escolha)     
     
     return escolha
-
 
 def cria_seu_dino(jogador):
 
@@ -70,79 +67,46 @@ def cria_oponente(random_number):
         
         return random_number
 
-
-
-
-
     else:
         return "algo deu errado"
 
-def mostra_caracter(object): # How can i change the objetc here to return another thing
+def mostra_caracter(object): # How can i change the objetc here to return another thing / change the text
     
+    print('*' * 30)
+    print(f'Nome: {object.nome}')
 
-    print(object.nome)
-
+    print(f'vida: ', end="")
     print(object.vida)
 
+    print("Velocidade: ", end='')
     print(object.velocidade)
 
+    print("Habilidade: ", end="")
     print(object.habilidade)
 
-def duel (escolha, oponente): # 1 = is player / 2 = oponent
+    print('*' * 30)
+def duel (escolha, oponente): # 1 = is player / 2 = machine
 
     vez = 0
 
 
     turno_player1 = escolha.velocidade
-    turno_player2 = oponente.velocidade
+    turno_maquina = oponente.velocidade
 
     while escolha.vida > 0 and oponente.vida > 0:
-
         
 
-        while turno_player1 < 20 and turno_player2 < 20:
+        while turno_player1 < 20 and turno_maquina < 20:
 
             turno_player1 += turno_player1
-            turno_player2 += turno_player2
+            turno_maquina += turno_maquina
 
-            print(turno_player1, turno_player2)
-        
-        
-        
+        if turno_player1 >= turno_maquina: # duel itself
+            Dinos.ataque(escolha,oponente)
+            break
 
-    print('Saiu loop')
-
-
-    # if turno_player1 > turno_player2:
-
-    #     vez = 1 
-
-    # if turno_player2 >= 20 and turno_player2 > turno_player1:
-
-    #     vez = 2
-    
-    # else:
-
-    #     vez = randint(1,2)
+        else:
+            Dinos.ataque(oponente, escolha)
+            break
 
 
-    
-
-    
-
-
-
-
-
-
-    
-
-
-
-    
-
-if __name__ == "__main__":
-
-    bem_vindo()
-    teste_escolha = escolha_dino()
-  

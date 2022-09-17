@@ -1,6 +1,7 @@
-from funcoes import*
+from funcoes import *
 from random import randint
 
+teste = ""
 bem_vindo()
 
 escolha = cria_seu_dino(escolha_dino()) #filtra o resultado
