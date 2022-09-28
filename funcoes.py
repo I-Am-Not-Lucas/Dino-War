@@ -27,6 +27,7 @@ def escolha_dino():
 
 def cria_seu_dino(jogador):
 
+
     if int(jogador) == 1:
 
         jogador = Dinos('Tiranossauro Rex', 2000, 300, 5, 'Rugido ensurdecedor')
@@ -41,6 +42,12 @@ def cria_seu_dino(jogador):
     
     if int(jogador) == 3:
 
+        jogador = Dinos('Triceratops', 3000, 150, 5, 'armadura de ferro')
+        
+        return jogador
+    
+    else:
+        
         jogador = Dinos('Triceratops', 3000, 150, 5, 'armadura de ferro')
         
         return jogador
@@ -85,6 +92,7 @@ def mostra_caracter(object): # How can i change the objetc here to return anothe
     print(object.habilidade)
 
     print('*' * 30)
+
 def duel (escolha, oponente): # 1 = is player / 2 = machine
 
     vez = 0
@@ -102,11 +110,17 @@ def duel (escolha, oponente): # 1 = is player / 2 = machine
             turno_maquina += turno_maquina
 
         if turno_player1 >= turno_maquina: # duel itself
-            Dinos.ataque(escolha,oponente)
-            break
+            escolha_opcao = Dinos.mostra_opcoes()
+
+            if escolha_opcao == 1:
+                pass
+            
+            #Dinos.ataque(escolha,oponente)
+
+            #turno_player1 = 0
 
         else:
-            Dinos.ataque(oponente, escolha)
-            break
+            #Dinos.ataque(oponente, escolha)
+            turno_maquina = 0 
 
 
