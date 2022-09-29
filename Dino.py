@@ -22,8 +22,8 @@ class Dinos:
         print("[3] Dado da sorte")
         escolha_opcao = input('Sua escolha: ')
         return escolha_opcao
-        
     
+
 if __name__ == '__main__':
     Dinos.mostra_opcoes()
 
