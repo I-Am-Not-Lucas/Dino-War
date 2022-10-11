@@ -1,23 +1,14 @@
-from funcoes import *
+import imp
+from Dino import Dinos
 from random import randint
 
-teste = ""
-bem_vindo()
+Dinos.bem_vindo()
 
-escolha = cria_seu_dino(escolha_dino()) #filtra o resultado
+escolha_jogador = Dinos.cria_seu_dino(Dinos.escolha_dino()) #filtra o resultado
 
-oponente = cria_oponente(randint(1, 3))
+oponente = Dinos.cria_oponente(randint(1, 3))
 
-mostra_caracter(escolha) ## i need finish the text here...
+Dinos.mostra_caracter(escolha_jogador) ## i need finish the text here...
 
-duel(escolha, oponente)
-
-## Começar a implementação do duelo e opções de duelo, mostrar na tela: De quem é a vez
-
-
-
-
-
-
-
+opcao_luta = Dinos.mostra_opcoes()
     
