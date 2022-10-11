@@ -165,9 +165,6 @@ class Dinos:
 
 
 
-if __name__ == '__main__':
-    Dinos.mostra_opcoes()
-
 
 
 
