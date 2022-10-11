@@ -156,7 +156,8 @@ class Dinos:
                     pass
 
                 elif escolha_opcao == '3':
-                    number  = dado_sorte()
+                    pass
+                    #umber  = dado_sorte()
 
 
             else:
